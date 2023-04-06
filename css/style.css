@@ -138,7 +138,7 @@ body.active{
 }
 
 .sidebar-nav{
-    padding: 20px 50px 20px 0;
+    padding: 20px 20px 20px 0;
 }
 
 .sidebar-nav .side-item{
@@ -522,9 +522,12 @@ footer {
     background-color: #666;
 }
 
+.footer-links li{
+    padding: 5px;
+}
+
 .footer-links li a {
     color: #666;
-    padding: 0 10px;
 }
 
 .footer-links li:last-child a {
@@ -568,15 +571,6 @@ footer p {
         display: none;
     }
 
-    .sidebar-content{
-        width: 300px;
-        padding: 20px;
-    }
-
-    .sidebar-content input {
-        width: 85%;
-    }
-
     .container {
         width: 100%;
         flex-wrap: wrap;
@@ -598,5 +592,100 @@ footer p {
 
     .second-article img {
         width: 90%;
+    }
+
+    .column-right {
+        width: 100%;
+    }
+
+    .column-right .content h3{
+        font-size: 1rem;
+    }
+
+    .main-recent{
+        display: block;
+    }
+
+    .main-recent img{
+        max-width: 100%;
+    }
+
+    .main-recent .content{
+        right: 0;
+        top: -20px;
+        width: 90%;
+    }
+
+    .second-recent {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .second-recent .recent {
+        margin: 0 3px 0 2px;
+    }
+
+    .second-recent .recent .content{
+        margin: 10px 5px;
+    }
+
+    .second-recent .recent .content h3{
+        font-size: 0.9rem;
+    }
+
+    .footer-links{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .sidebar-content{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .sidebar-content input {
+        width: 85%;
+    }
+
+    .sidebar-content .sidebar-title, .sidebar-content form{
+        padding: 20px;
+    }
+
+    .sidebar-nav .side-item{
+        flex-wrap: wrap;
+    }
+
+    .sidebar-nav .side-item:hover{
+        background-color: #fff;
+    }
+
+    .sidebar-nav .v-decoration{
+        margin-right: 30px;
+    }
+
+    .side-item .sidebar-link{
+        width: 85%;
+    }
+
+    .sidebar-link i{
+        transform: rotate(90deg);
+    }
+
+    .inner-links{
+        position: static;
+        margin-left: 30px;
+    }
+
+    .inner-links-container{
+        position: static;
+    }
+
+    .sidebar-nav .side-item:hover .inner-links .inner-links-container{
+        display: block;
+    }
+
+    .triangle-pin{
+        display: none;
     }
 }
